@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     customer_vehicle.belongsTo(models.customer)
     customer_vehicle.belongsTo(models.vehicle)
 
-    transaction_customer_vehicle.belongsToMany(models.transaction, { through: 'transaction_customer_vehicle' }) 
+    customer_vehicle.belongsToMany(models.transaction, { through: 'transaction_customer_vehicle' }) 
 
 
   };

@@ -4,11 +4,12 @@ module.exports = (sequelize, DataTypes) => {
     transaction_id: DataTypes.INTEGER,
     shop_item_id: DataTypes.INTEGER,
     quantity: DataTypes.INTEGER
-  }, {});
+  }, {})
   transaction_shop_item.associate = models => {
     // associations can be defined here
-    transaction_shop_item.hasOne(model.shop_item)
+    transaction_shop_item.hasOne(models.shop_item)
     transaction_shop_item.belongsTo(models.transaction)
-  };
-  return transaction_shop_item;
-};
+
+  }
+  return transaction_shop_item
+}
