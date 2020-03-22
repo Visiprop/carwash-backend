@@ -8,8 +8,14 @@ module.exports = (sequelize, DataTypes) => {
     phone_number: DataTypes.BIGINT,
     address: DataTypes.TEXT
   }, {});
-  customer.associate = function(models) {
+  customer.associate = models => {
     // associations can be defined here
-  };
-  return customer;
+    customer.belongsToMany(models.vehicle, { through: 'customer_vehicles' })
+  
+    customer.hasMany(models.transaction, {
+      foreignKey: 'customer_id'
+    }) 
+    
+  }
+  return customer 
 };
