@@ -23,12 +23,14 @@ module.exports = {
             description:'Cuci Kendaraan',
             price:50000,
             additional_price:20000,
+            isDeleted:0
           },
           {
             name:'Cat Warna',
             description:'Cat Warna Kendaraan',
             price:100000,
             additional_price:0,
+            isDeleted:0
           }
           
         )

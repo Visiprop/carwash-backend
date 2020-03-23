@@ -1,6 +1,10 @@
 const admin = require("./admin.controller")
+const superadmin = require("./superadmin.controller")
+const customer = require("./customer.controller")
 
 
 module.exports = {
-    admin: admin
+    admin: admin,
+    superadmin: superadmin,
+    customer: customer
 }

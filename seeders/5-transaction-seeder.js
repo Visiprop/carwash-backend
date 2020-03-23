@@ -21,7 +21,8 @@ module.exports = {
           {
             customer_id:index + 1,
             date:faker.date.past(),            
-            status:'LUNAS'
+            status:'LUNAS',
+            isDeleted:0
           }
           
         )

@@ -2,7 +2,8 @@
 module.exports = (sequelize, DataTypes) => {
   const transaction_customer_vehicle_service = sequelize.define('transaction_customer_vehicle_service', {
     transaction_customer_vehicle_id: DataTypes.INTEGER,
-    service_id: DataTypes.INTEGER
+    service_id: DataTypes.INTEGER,
+    isDeleted: DataTypes.INTEGER
   }, {});
   transaction_customer_vehicle_service.associate = models => {
     // associations can be defined here

@@ -1,7 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const vehicle_type = sequelize.define('vehicle_type', {
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    isDeleted: DataTypes.INTEGER
   }, {});
   vehicle_type.associate = models => {
     // associations can be defined here

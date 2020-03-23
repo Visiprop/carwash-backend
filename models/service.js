@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     description: DataTypes.STRING,
     price: DataTypes.DOUBLE,
-    additional_price: DataTypes.DOUBLE
+    additional_price: DataTypes.DOUBLE,
+    isDeleted: DataTypes.INTEGER
   }, {});
   service.associate = models => {
     // associations can be defined here

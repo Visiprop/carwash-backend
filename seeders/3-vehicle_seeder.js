@@ -21,7 +21,8 @@ module.exports = {
           {
             vehicle_type_id:index + 1,
             name:'Alphard',            
-            brand:'Toyota'            
+            brand:'Toyota',
+            isDeleted:0            
           }
           
         )

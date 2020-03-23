@@ -20,6 +20,9 @@ module.exports = {
       additional_price: {
         type: Sequelize.DOUBLE
       },
+      isDeleted: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -25,6 +25,7 @@ module.exports = {
             email:faker.internet.email(),
             phone_number:faker.phone.phoneNumber(),
             address:faker.address.city(),
+            isDeleted:0
           }
           
         )

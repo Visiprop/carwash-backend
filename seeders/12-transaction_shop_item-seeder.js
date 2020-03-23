@@ -21,7 +21,8 @@ module.exports = {
           {
             transaction_id:index+1,
             shop_item_id:index+1,
-            quantity:faker.random.number(),              
+            quantity:faker.random.number(),
+            isDeleted:0             
           }
           
         )

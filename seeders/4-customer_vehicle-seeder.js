@@ -21,7 +21,8 @@ module.exports = {
             {
               customer_id:index + 1,
               vehicle_id:index + 1,            
-              plate_number:faker.random.number()            
+              plate_number:faker.random.number(),
+              isDeleted:0            
             }
             
           )

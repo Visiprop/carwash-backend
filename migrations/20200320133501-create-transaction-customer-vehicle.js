@@ -14,6 +14,9 @@ module.exports = {
       customer_vehicle_id: {
         type: Sequelize.INTEGER
       },
+      isDeleted: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

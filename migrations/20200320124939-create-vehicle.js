@@ -17,6 +17,9 @@ module.exports = {
       brand: {
         type: Sequelize.STRING
       },
+      isDeleted: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

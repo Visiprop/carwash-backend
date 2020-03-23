@@ -12,18 +12,11 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    var array = []
-      for (let index = 0; index < 10; index++) {
-              
-          array.push(
-            {
-              name:'Mobil',
-              isDeleted:0                          
-            }
-            
-          )
-      }
-      return queryInterface.bulkInsert('vehicle_types', array, {});
+    return queryInterface.bulkInsert('superadmins', [{      
+      username: 'superadmin',
+      password: 'superadmin321',
+      isDeleted:0
+    }], {})
   },
 
   down: (queryInterface, Sequelize) => {
@@ -34,6 +27,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-    return queryInterface.bulkDelete('vehicle_types', null, {});
+    return queryInterface.bulkDelete('superadmins', null, {})
   }
 };

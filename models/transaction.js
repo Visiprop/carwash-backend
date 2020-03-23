@@ -3,7 +3,8 @@ module.exports = (sequelize, DataTypes) => {
   const transaction = sequelize.define('transaction', {
     customer_id: DataTypes.INTEGER,
     date: DataTypes.DATE,
-    status: DataTypes.STRING
+    status: DataTypes.STRING,
+    isDeleted: DataTypes.INTEGER
   }, {});
   transaction.associate = models => {
     // associations can be defined here

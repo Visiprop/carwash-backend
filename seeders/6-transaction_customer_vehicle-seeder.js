@@ -18,7 +18,8 @@ module.exports = {
         array.push(
           {
             transaction_id:index + 1,
-            customer_vehicle_id:index + 1            
+            customer_vehicle_id:index + 1,
+            isDeleted:0            
           }
           
         )

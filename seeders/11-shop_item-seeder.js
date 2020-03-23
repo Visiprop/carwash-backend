@@ -21,7 +21,8 @@ module.exports = {
             {
               name:faker.commerce.productName(),
               description:faker.name.lastName(),
-              price:faker.random.number(),              
+              price:faker.random.number(),
+              isDeleted:0              
             }
             
           )

@@ -8,9 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
-        type: Sequelize.STRING
-      },
       first_name: {
         type: Sequelize.STRING
       },
@@ -25,6 +22,9 @@ module.exports = {
       },
       address: {
         type: Sequelize.TEXT
+      },
+      isDeleted: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

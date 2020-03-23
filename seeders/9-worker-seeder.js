@@ -24,6 +24,7 @@ module.exports = {
             KTP_NIK:faker.random.number(),
             phone_number:faker.phone.phoneNumber(),
             address:faker.address.city(),
+            isDeleted:0
           }
           
         )

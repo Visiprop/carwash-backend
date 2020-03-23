@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     ktp_nik: DataTypes.STRING,
     phone_number: DataTypes.BIGINT,
-    address: DataTypes.STRING
+    address: DataTypes.STRING,
+    isDeleted: DataTypes.INTEGER
   }, {});
   worker.associate = models => {
     // associations can be defined here

@@ -20,7 +20,8 @@ module.exports = {
           {
             email:faker.internet.email(),
             username:faker.name.findName(),
-            password:"123"
+            password:"1234567",
+            isDeleted:0
           }
           
         )
